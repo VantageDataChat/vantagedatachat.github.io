@@ -11,6 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 element.innerHTML = translations[lang][key];
             }
         });
+
+        if (lang === 'en') {
+            langSwitcher.textContent = '中文';
+        } else {
+            langSwitcher.textContent = 'English';
+        }
     };
 
     langSwitcher.addEventListener('click', () => {

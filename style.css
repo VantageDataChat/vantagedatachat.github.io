@@ -1,10 +1,11 @@
 :root {
-    --background-color: #0B0C10;
-    --primary-color: #66FCF1;
-    --secondary-color: #45A29E;
-    --text-color: #C5C6C7;
+    --background-color: #FFFFFF;
+    --primary-color: #007AFF;
+    --secondary-color: #5856D6;
+    --text-color: #333333;
     --light-text-color: #FFFFFF;
-    --border-color: rgba(102, 252, 241, 0.2);
+    --border-color: #E5E5EA;
+    --card-background: #F2F2F7;
 }
 
 body {
@@ -13,13 +14,15 @@ body {
     line-height: 1.8;
     background-color: var(--background-color);
     color: var(--text-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 header {
-    background: rgba(11, 12, 16, 0.8);
+    background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
     padding: 1rem 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -32,12 +35,13 @@ nav {
     align-items: center;
     width: 90%;
     margin: 0 auto;
+    max-width: 1200px;
 }
 
 .logo {
     font-size: 1.8rem;
     font-weight: 700;
-    color: var(--light-text-color);
+    color: var(--primary-color);
 }
 
 nav ul {
@@ -77,37 +81,57 @@ nav ul li a:hover::after {
 }
 
 #lang-switcher {
-    background: transparent;
+    background: var(--primary-color);
+    color: var(--light-text-color);
     border: 1px solid var(--primary-color);
-    color: var(--primary-color);
     padding: 0.5rem 1rem;
     border-radius: 8px;
     cursor: pointer;
+    font-weight: 500;
     transition: background 0.3s ease, color 0.3s ease;
 }
 
 #lang-switcher:hover {
-    background: var(--primary-color);
-    color: var(--background-color);
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
 }
 
 .hero {
     text-align: center;
     padding: 6rem 1rem;
-    background: linear-gradient(135deg, rgba(11, 12, 16, 0.8), rgba(20, 30, 36, 0.9)), url('https://www.transparenttextures.com/patterns/cubes.png');
+    background-color: var(--background-color);
     position: relative;
+    overflow: hidden;
 }
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0, 122, 255, 0.05), transparent 30%);
+    animation: pulse 10s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.5); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: scale(1.5); opacity: 0; }
+}
+
 
 .hero h1 {
     font-size: 4rem;
     margin-bottom: 1rem;
-    color: var(--light-text-color);
+    color: #1c1c1e;
     font-weight: 700;
 }
 
 .hero p {
     font-size: 1.3rem;
-    color: var(--text-color);
+    color: #636366;
     margin-bottom: 2.5rem;
     max-width: 800px;
     margin-left: auto;
@@ -115,19 +139,19 @@ nav ul li a:hover::after {
 }
 
 .cta-button {
-    background: var(--primary-color);
-    color: var(--background-color);
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: var(--light-text-color);
     padding: 1rem 2.5rem;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 0 20px rgba(102, 252, 241, 0.4);
+    box-shadow: 0 10px 20px rgba(0, 122, 255, 0.2);
 }
 
 .cta-button:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 30px rgba(102, 252, 241, 0.6);
+    box-shadow: 0 15px 30px rgba(88, 86, 214, 0.3);
 }
 
 section {
@@ -141,7 +165,7 @@ section h2 {
     text-align: center;
     font-size: 3rem;
     margin-bottom: 3rem;
-    color: var(--light-text-color);
+    color: #1c1c1e;
     font-weight: 600;
 }
 
@@ -152,7 +176,7 @@ section h2 {
 }
 
 .feature-item, .advantage-item {
-    background: rgba(28, 29, 33, 0.5);
+    background: var(--card-background);
     padding: 2.5rem;
     border-radius: 12px;
     border: 1px solid var(--border-color);
@@ -162,7 +186,7 @@ section h2 {
 
 .feature-item:hover, .advantage-item:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
 
 .feature-item h3, .advantage-item h3 {
@@ -192,13 +216,13 @@ section h2 {
     text-align: center;
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
-    color: var(--light-text-color);
+    color: #1c1c1e;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    background: rgba(28, 29, 33, 0.5);
+    background: var(--card-background);
     border: 1px solid var(--border-color);
     border-radius: 8px;
     overflow: hidden;
@@ -211,8 +235,8 @@ th, td {
 }
 
 th {
-    background-color: rgba(102, 252, 241, 0.1);
-    color: var(--light-text-color);
+    background-color: rgba(0, 122, 255, 0.05);
+    color: #1c1c1e;
     font-weight: 600;
 }
 
@@ -228,7 +252,7 @@ th {
 }
 
 #who-is-it-for li {
-    background: rgba(28, 29, 33, 0.5);
+    background: var(--card-background);
     padding: 1.2rem;
     margin: 0.8rem auto;
     border-radius: 8px;
@@ -245,7 +269,7 @@ th {
 
 #tech-stack .tech-stack-item {
     background: var(--secondary-color);
-    color: var(--background-color);
+    color: var(--light-text-color);
     padding: 0.8rem 1.5rem;
     border-radius: 50px;
     font-weight: 600;
@@ -264,7 +288,7 @@ th {
 #quick-start li {
     flex: 1;
     min-width: 220px;
-    background: rgba(28, 29, 33, 0.5);
+    background: var(--card-background);
     padding: 2.5rem;
     border-radius: 12px;
     border: 1px solid var(--border-color);
@@ -288,7 +312,7 @@ th {
     width: 40px;
     height: 40px;
     background: var(--primary-color);
-    color: var(--background-color);
+    color: var(--light-text-color);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -299,7 +323,7 @@ th {
 }
 
 footer {
-    background: #0B0C10;
+    background: #F2F2F7;
     color: var(--text-color);
     text-align: center;
     padding: 3rem 1rem;
