@@ -48,6 +48,22 @@ nav ul li a:hover {
     color: #007aff;
 }
 
+#lang-switcher {
+    background: transparent;
+    border: 1px solid #007aff;
+    color: #007aff;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+#lang-switcher:hover {
+    background: #007aff;
+    color: #fff;
+}
+
+
 .hero {
     text-align: center;
     padding: 4rem 1rem;

@@ -1,159 +1,160 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RapidBI (观界) - 新一代智能BI桌面应用</title>
+    <title>VantageData - Next-Gen Smart BI Desktop Application</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <nav>
-            <div class="logo">RapidBI (观界)</div>
+            <div class="logo">VantageData</div>
             <ul>
-                <li><a href="#features">核心功能</a></li>
-                <li><a href="#advantage">产品优势</a></li>
-                <li><a href="#who-is-it-for">适用人群</a></li>
-                <li><a href="#tech-stack">技术架构</a></li>
-                <li><a href="#quick-start">快速开始</a></li>
+                <li><a href="#features" data-lang-key="nav_features">Core Features</a></li>
+                <li><a href="#advantage" data-lang-key="nav_advantage">Product Advantage</a></li>
+                <li><a href="#who-is-it-for" data-lang-key="nav_who_is_it_for">Who It's For</a></li>
+                <li><a href="#tech-stack" data-lang-key="nav_tech_stack">Technology Stack</a></li>
+                <li><a href="#quick-start" data-lang-key="nav_quick_start">Quick Start</a></li>
+                <li><button id="lang-switcher">中文</button></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="hero">
-            <h1>观界 (RapidBI)</h1>
-            <p>新一代智能商业智能桌面应用，让每一位用户都能轻松驾驭数据，洞见商业全貌。</p>
-            <a href="#quick-start" class="cta-button">立即开始</a>
+            <h1 data-lang-key="hero_title">VantageData</h1>
+            <p data-lang-key="hero_subtitle">A new generation of intelligent business intelligence desktop applications, allowing every user to easily control data and gain a comprehensive view of the business.</p>
+            <a href="#quick-start" class="cta-button" data-lang-key="hero_cta">Get Started</a>
         </section>
 
         <section id="features">
-            <h2>核心功能</h2>
+            <h2 data-lang-key="features_title">Core Features</h2>
             <div class="feature-grid">
                 <div class="feature-item">
-                    <h3>智能数据连接</h3>
-                    <p>一键导入 CSV、Excel、JSON、SQLite 等常见数据格式，自动识别数据结构和类型。</p>
+                    <h3 data-lang-key="feature_1_title">Intelligent Data Connection</h3>
+                    <p data-lang-key="feature_1_desc">One-click import of common data formats such as CSV, Excel, JSON, SQLite, etc., with automatic identification of data structure and type.</p>
                 </div>
                 <div class="feature-item">
-                    <h3>自然语言分析</h3>
-                    <p>用日常语言提问，AI 自动生成分析结果，支持多模型兼容。</p>
+                    <h3 data-lang-key="feature_2_title">Natural Language Analysis</h3>
+                    <p data-lang-key="feature_2_desc">Ask questions in everyday language, and the AI will automatically generate analysis results, supporting multiple models.</p>
                 </div>
                 <div class="feature-item">
-                    <h3>交互式仪表盘</h3>
-                    <p>拖拽式设计，直观地创建和自定义数据看板，集成 ECharts 图表库。</p>
+                    <h3 data-lang-key="feature_3_title">Interactive Dashboard</h3>
+                    <p data-lang-key="feature_3_desc">Drag-and-drop design to intuitively create and customize data dashboards, integrated with the ECharts library.</p>
                 </div>
                 <div class="feature-item">
-                    <h3>自动化洞察</h3>
-                    <p>自动识别数据趋势、模式和异常，提供可执行的业务建议。</p>
+                    <h3 data-lang-key="feature_4_title">Automated Insights</h3>
+                    <p data-lang-key="feature_4_desc">Automatically identifies data trends, patterns, and anomalies, and provides actionable business recommendations.</p>
                 </div>
             </div>
         </section>
 
         <section id="advantage">
-            <h2>产品特点</h2>
+            <h2 data-lang-key="advantage_title">Product Features</h2>
             <div class="advantage-grid">
                 <div class="advantage-item">
-                    <h3>隐私优先，数据不出本地</h3>
-                    <p>桌面原生架构，敏感业务数据始终存储在本地设备，无需上传云端。</p>
+                    <h3 data-lang-key="advantage_1_title">Privacy First, Data Stays Local</h3>
+                    <p data-lang-key="advantage_1_desc">Desktop-native architecture ensures that your sensitive business data is always stored on your local device and never uploaded to the cloud.</p>
                 </div>
                 <div class="advantage-item">
-                    <h3>零门槛，零基础上手</h3>
-                    <p>无需编写 SQL 或 Python 代码，无需掌握复杂的数据分析技能。</p>
+                    <h3 data-lang-key="advantage_2_title">Zero Barrier, Zero-Based Start</h3>
+                    <p data-lang-key="advantage_2_desc">No need to write SQL or Python code, and no need to master complex data analysis skills.</p>
                 </div>
                 <div class="advantage-item">
-                    <h3>AI 原生架构</h3>
-                    <p>自然语言直接生成可视化图表，AI 自动推荐最佳分析视角。</p>
+                    <h3 data-lang-key="advantage_3_title">AI-Native Architecture</h3>
+                    <p data-lang-key="advantage_3_desc">Directly generate visual charts from natural language, with AI automatically recommending the best analysis perspectives.</p>
                 </div>
                  <div class="advantage-item">
-                    <h3>跨平台桌面体验</h3>
-                    <p>响应迅速，无网络延迟, 深色/浅色主题自动适配。</p>
+                    <h3 data-lang-key="advantage_4_title">Cross-Platform Desktop Experience</h3>
+                    <p data-lang-key="advantage_4_desc">Fast response, no network latency, automatic adaptation to dark/light themes.</p>
                 </div>
             </div>
         </section>
         
         <section id="comparison">
-            <h2>与同类产品的差异化优势</h2>
+            <h2 data-lang-key="comparison_title">Differentiated Advantages Over Similar Products</h2>
             <div class="comparison-container">
                 <div class="comparison-table">
-                    <h3>与传统 BI 工具对比</h3>
+                    <h3 data-lang-key="comparison_1_title">vs. Traditional BI Tools</h3>
                     <table>
                         <thead>
                             <tr>
-                                <th>对比维度</th>
-                                <th>传统 BI 工具</th>
-                                <th>观界 (RapidBI)</th>
+                                <th data-lang-key="comparison_1_dim">Dimension</th>
+                                <th data-lang-key="comparison_1_trad">Traditional BI Tools</th>
+                                <th data-lang-key="comparison_1_rapid">VantageData</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>学习成本</td>
-                                <td>高，需要专业培训</td>
-                                <td class="highlight">低，零门槛上手</td>
+                                <td data-lang-key="comparison_1_learn">Learning Curve</td>
+                                <td data-lang-key="comparison_1_learn_trad">High, requires professional training</td>
+                                <td class="highlight" data-lang-key="comparison_1_learn_rapid">Low, zero-barrier entry</td>
                             </tr>
                             <tr>
-                                <td>部署方式</td>
-                                <td>复杂，需服务器部署</td>
-                                <td class="highlight">简单，桌面即开即用</td>
+                                <td data-lang-key="comparison_1_deploy">Deployment</td>
+                                <td data-lang-key="comparison_1_deploy_trad">Complex, requires server deployment</td>
+                                <td class="highlight" data-lang-key="comparison_1_deploy_rapid">Simple, desktop ready-to-use</td>
                             </tr>
                             <tr>
-                                <td>AI 能力</td>
-                                <td>有限或需额外付费</td>
-                                <td class="highlight">原生集成，开箱即用</td>
+                                <td data-lang-key="comparison_1_ai">AI Capability</td>
+                                <td data-lang-key="comparison_1_ai_trad">Limited or requires extra payment</td>
+                                <td class="highlight" data-lang-key="comparison_1_ai_rapid">Natively integrated, out-of-the-box</td>
                             </tr>
                             <tr>
-                                <td>数据隐私</td>
-                                <td>云端存储，存在风险</td>
-                                <td class="highlight">本地存储，隐私可控</td>
+                                <td data-lang-key="comparison_1_privacy">Data Privacy</td>
+                                <td data-lang-key="comparison_1_privacy_trad">Cloud storage, potential risks</td>
+                                <td class="highlight" data-lang-key="comparison_1_privacy_rapid">Local storage, privacy-controllable</td>
                             </tr>
                              <tr>
-                                <td>成本结构</td>
-                                <td>昂贵的企业授权费</td>
-                                <td class="highlight">个人可负担的定价</td>
+                                <td data-lang-key="comparison_1_cost">Cost Structure</td>
+                                <td data-lang-key="comparison_1_cost_trad">Expensive enterprise licenses</td>
+                                <td class="highlight" data-lang-key="comparison_1_cost_rapid">Affordable for individuals</td>
                             </tr>
                              <tr>
-                                <td>使用场景</td>
-                                <td>面向企业 IT 部门</td>
-                                <td class="highlight">面向个人和中小企业</td>
+                                <td data-lang-key="comparison_1_use">Use Case</td>
+                                <td data-lang-key="comparison_1_use_trad">For corporate IT departments</td>
+                                <td class="highlight" data-lang-key="comparison_1_use_rapid">For individuals and SMEs</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
                 <div class="comparison-table">
-                    <h3>与通用 AI 工具对比</h3>
+                    <h3 data-lang-key="comparison_2_title">vs. General AI Tools</h3>
                     <table>
                         <thead>
                             <tr>
-                                <th>对比维度</th>
-                                <th>通用 AI 助手</th>
-                                <th>观界 (RapidBI)</th>
+                                <th data-lang-key="comparison_2_dim">Dimension</th>
+                                <th data-lang-key="comparison_2_gen">General AI Assistants</th>
+                                <th data-lang-key="comparison_2_rapid">VantageData</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>数据安全</td>
-                                <td>数据上传云端</td>
-                                <td class="highlight">本地数据处理</td>
+                                <td data-lang-key="comparison_2_sec">Data Security</td>
+                                <td data-lang-key="comparison_2_sec_gen">Data uploaded to the cloud</td>
+                                <td class="highlight" data-lang-key="comparison_2_sec_rapid">Local data processing</td>
                             </tr>
                             <tr>
-                                <td>图表能力</td>
-                                <td>仅文字/代码回复</td>
-                                <td class="highlight">原生可视化渲染</td>
+                                <td data-lang-key="comparison_2_chart">Charting Capability</td>
+                                <td data-lang-key="comparison_2_chart_gen">Text/code responses only</td>
+                                <td class="highlight" data-lang-key="comparison_2_chart_rapid">Native visual rendering</td>
                             </tr>
                             <tr>
-                                <td>数据规模</td>
-                                <td>受限 token 上下文</td>
-                                <td class="highlight">支持完整数据集分析</td>
+                                <td data-lang-key="comparison_2_scale">Data Scale</td>
+                                <td data-lang-key="comparison_2_scale_gen">Limited by token context</td>
+                                <td class="highlight" data-lang-key="comparison_2_scale_rapid">Supports full dataset analysis</td>
                             </tr>
                             <tr>
-                                <td>持久化</td>
-                                <td>对话结束即丢失</td>
-                                <td class="highlight">完整会话历史保存</td>
+                                <td data-lang-key="comparison_2_persist">Persistence</td>
+                                <td data-lang-key="comparison_2_persist_gen">Lost when conversation ends</td>
+                                <td class="highlight" data-lang-key="comparison_2_persist_rapid">Full session history saved</td>
                             </tr>
                             <tr>
-                                <td>离线能力</td>
-                                <td>必须联网</td>
-                                <td class="highlight">支持离线使用</td>
+                                <td data-lang-key="comparison_2_offline">Offline Capability</td>
+                                <td data-lang-key="comparison_2_offline_gen">Requires internet connection</td>
+                                <td class="highlight" data-lang-key="comparison_2_offline_rapid">Supports offline use</td>
                             </tr>
                         </tbody>
                     </table>
@@ -162,42 +163,44 @@
         </section>
 
         <section id="who-is-it-for">
-            <h2>适用人群</h2>
+            <h2 data-lang-key="who_is_it_for_title">Who It's For</h2>
             <ul>
-                <li>企业管理者：快速获取业务洞察，辅助决策</li>
-                <li>部门负责人：监控团队 KPIs，跟踪业务指标</li>
-                <li>小企业主：无需聘请数据分析师即可进行数据分析</li>
-                <li>销售/市场人员：自助分析客户数据和销售趋势</li>
-                <li>任何想用数据讲故事的人</li>
+                <li data-lang-key="who_1">Business Managers: Quickly gain business insights to support decision-making.</li>
+                <li data-lang-key="who_2">Department Heads: Monitor team KPIs and track business metrics.</li>
+                <li data-lang-key="who_3">Small Business Owners: Perform data analysis without hiring a data analyst.</li>
+                <li data-lang-key="who_4">Sales/Marketing Professionals: Self-service analysis of customer data and sales trends.</li>
+                <li data-lang-key="who_5">Anyone who wants to tell a story with data.</li>
             </ul>
         </section>
 
         <section id="tech-stack">
-            <h2>技术架构</h2>
+            <h2 data-lang-key="tech_stack_title">Technology Stack</h2>
             <div class="tech-stack-grid">
-                <div class="tech-stack-item">前端: React 18 + TypeScript + Tailwind CSS</div>
-                <div class="tech-stack-item">后端: Go 1.23 + Wails v2</div>
-                <div class="tech-stack-item">AI 集成: Eino 智能体框架</div>
-                <div class="tech-stack-item">数据存储: SQLite + 本地文件</div>
-                <div class="tech-stack-item">图表引擎: Apache ECharts</div>
+                <div class="tech-stack-item" data-lang-key="tech_1">Frontend: React 18 + TypeScript + Tailwind CSS</div>
+                <div class="tech-stack-item" data-lang-key="tech_2">Backend: Go 1.23 + Wails v2</div>
+                <div class="tech-stack-item" data-lang-key="tech_3">AI Integration: Eino Agent Framework</div>
+                <div class="tech-stack-item" data-lang-key="tech_4">Data Storage: SQLite + Local Files</div>
+                <div class="tech-stack-item" data-lang-key="tech_5">Chart Engine: Apache ECharts</div>
             </div>
         </section>
 
         <section id="quick-start">
-            <h2>快速开始</h2>
+            <h2 data-lang-key="quick_start_title">Quick Start</h2>
             <ol>
-                <li>下载并安装观界应用</li>
-                <li>导入您的数据文件（CSV/Excel/JSON）</li>
-                <li>用自然语言向 AI 助手提问</li>
-                <li>获取自动生成的分析结果和可视化图表</li>
+                <li data-lang-key="quick_1">Download and install the VantageData application.</li>
+                <li data-lang-key="quick_2">Import your data file (CSV/Excel/JSON).</li>
+                <li data-lang-key="quick_3">Ask the AI assistant questions in natural language.</li>
+                <li data-lang-key="quick_4">Get automatically generated analysis results and visual charts.</li>
             </ol>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 RapidBI (观界). All Rights Reserved.</p>
-        <p class="slogan">See Beyond Data. Master Your Vantage.</p>
+        <p data-lang-key="footer_copyright">&copy; 2026 VantageData. All Rights Reserved.</p>
+        <p class="slogan" data-lang-key="footer_slogan">See Beyond Data. Master Your Vantage.</p>
     </footer>
 
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
