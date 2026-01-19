@@ -1,18 +1,29 @@
+:root {
+    --background-color: #0B0C10;
+    --primary-color: #66FCF1;
+    --secondary-color: #45A29E;
+    --text-color: #C5C6C7;
+    --light-text-color: #FFFFFF;
+    --border-color: rgba(102, 252, 241, 0.2);
+}
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
+    line-height: 1.8;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 header {
-    background: #fff;
+    background: rgba(11, 12, 16, 0.8);
+    backdrop-filter: blur(10px);
     padding: 1rem 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
+    border-bottom: 1px solid var(--border-color);
 }
 
 nav {
@@ -24,34 +35,51 @@ nav {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #007aff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--light-text-color);
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     margin: 0;
     padding: 0;
+    align-items: center;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #555;
+    color: var(--text-color);
     font-weight: 500;
     transition: color 0.3s ease;
+    position: relative;
 }
 
 nav ul li a:hover {
-    color: #007aff;
+    color: var(--primary-color);
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
 }
 
 #lang-switcher {
     background: transparent;
-    border: 1px solid #007aff;
-    color: #007aff;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
     padding: 0.5rem 1rem;
     border-radius: 8px;
     cursor: pointer;
@@ -59,76 +87,93 @@ nav ul li a:hover {
 }
 
 #lang-switcher:hover {
-    background: #007aff;
-    color: #fff;
+    background: var(--primary-color);
+    color: var(--background-color);
 }
-
 
 .hero {
     text-align: center;
-    padding: 4rem 1rem;
-    background: #fff;
+    padding: 6rem 1rem;
+    background: linear-gradient(135deg, rgba(11, 12, 16, 0.8), rgba(20, 30, 36, 0.9)), url('https://www.transparenttextures.com/patterns/cubes.png');
+    position: relative;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: var(--light-text-color);
+    font-weight: 700;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    color: var(--text-color);
+    margin-bottom: 2.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cta-button {
-    background: #007aff;
-    color: #fff;
-    padding: 0.8rem 1.5rem;
-    border-radius: 8px;
+    background: var(--primary-color);
+    color: var(--background-color);
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
     text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s ease;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 20px rgba(102, 252, 241, 0.4);
 }
 
 .cta-button:hover {
-    background: #0056b3;
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(102, 252, 241, 0.6);
 }
 
 section {
-    padding: 3rem 1rem;
+    padding: 5rem 1rem;
     width: 90%;
     margin: 0 auto;
+    max-width: 1200px;
 }
 
 section h2 {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #007aff;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: var(--light-text-color);
+    font-weight: 600;
 }
 
 .feature-grid, .advantage-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
 }
 
 .feature-item, .advantage-item {
-    background: #fff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    text-align: center;
+    background: rgba(28, 29, 33, 0.5);
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover, .advantage-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .feature-item h3, .advantage-item h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: 1rem;
+    color: var(--primary-color);
+    font-weight: 600;
 }
 
 #comparison {
-    background: #fff;
+    background: var(--background-color);
 }
 
 .comparison-container {
@@ -140,34 +185,40 @@ section h2 {
 
 .comparison-table {
     flex: 1;
-    min-width: 400px;
+    min-width: 450px;
 }
 
 .comparison-table h3 {
     text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--light-text-color);
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background: rgba(28, 29, 33, 0.5);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 th, td {
-    padding: 1rem;
+    padding: 1.2rem;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--border-color);
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: rgba(102, 252, 241, 0.1);
+    color: var(--light-text-color);
+    font-weight: 600;
 }
 
 .highlight {
-    color: #007aff;
-    font-weight: bold;
+    color: var(--primary-color);
+    font-weight: 600;
 }
 
 #who-is-it-for ul {
@@ -177,26 +228,27 @@ th {
 }
 
 #who-is-it-for li {
-    background: #fff;
-    padding: 1rem;
-    margin-bottom: 0.5rem;
+    background: rgba(28, 29, 33, 0.5);
+    padding: 1.2rem;
+    margin: 0.8rem auto;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border: 1px solid var(--border-color);
+    max-width: 600px;
 }
 
 #tech-stack .tech-stack-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 #tech-stack .tech-stack-item {
-    background: #007aff;
-    color: #fff;
-    padding: 0.8rem 1.2rem;
-    border-radius: 20px;
-    font-weight: 500;
+    background: var(--secondary-color);
+    color: var(--background-color);
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
 }
 
 #quick-start ol {
@@ -204,47 +256,58 @@ th {
     justify-content: space-around;
     list-style: none;
     padding: 0;
-    gap: 1rem;
+    gap: 2rem;
     flex-wrap: wrap;
+    counter-reset: step-counter;
 }
 
 #quick-start li {
     flex: 1;
-    min-width: 200px;
-    background: #fff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    min-width: 220px;
+    background: rgba(28, 29, 33, 0.5);
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
     text-align: center;
     font-size: 1.1rem;
     position: relative;
-    counter-increment: step-counter;
+    transition: transform 0.3s ease;
+}
+
+#quick-start li:hover {
+    transform: translateY(-5px);
 }
 
 #quick-start li::before {
     content: counter(step-counter);
+    counter-increment: step-counter;
     position: absolute;
-    top: -15px;
-    left: -15px;
-    width: 30px;
-    height: 30px;
-    background: #007aff;
-    color: #fff;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    color: var(--background-color);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border: 2px solid var(--background-color);
 }
 
 footer {
-    background: #333;
-    color: #fff;
+    background: #0B0C10;
+    color: var(--text-color);
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
+    border-top: 1px solid var(--border-color);
 }
 
 footer .slogan {
     font-style: italic;
-    color: #aaa;
+    color: var(--secondary-color);
+    font-size: 1.1rem;
 }
