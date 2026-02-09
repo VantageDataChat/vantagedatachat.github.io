@@ -2,17 +2,236 @@ const translations = {
     "en": {
         "title": "VantageData - AI-Powered Enterprise Data Analysis Platform",
         "nav_features": "Core Features",
-        "nav_tech": "Technology",
-        "nav_scenarios": "Use Cases",
-        "nav_advantage": "Advantages",
-        "nav_quick_start": "Get Started",
-        
+        "nav_advantage": "Product Advantage",
+        "nav_who_is_it_for": "Who It's For",
+        "nav_quick_start": "Quick Start",
+
         "hero_title": "VantageData",
-        "hero_subtitle_cn": "观界",
-        "hero_tagline": "See Beyond Data. Master Your Vantage.",
-        "hero_description": "Enterprise-grade intelligent data analysis platform powered by AI. Transform natural language into actionable insights.",
+        "hero_subtitle": "AI-Powered Data Analysis Platform for Modern Businesses",
         "hero_cta": "Get Started",
-        "hero_cta_secondary": "Learn More",
+
+        "features_title": "Core Features",
+
+        "feature_1_title": "Intelligent AI Data Assistant",
+        "feature_1_desc": "Natural language queries with multi-turn conversation support. AI understands your intent and provides precise analysis recommendations.",
+
+        "feature_2_title": "Multi-Source Data Integration",
+        "feature_2_desc": "Connect seamlessly to files, databases, cloud warehouses, and e-commerce platforms.",
+
+        "feature_3_title": "Intelligent Data Insights",
+        "feature_3_desc": "AI automatically analyzes data structure, quality, and patterns. Discover hidden correlations and anomalies.",
+
+        "feature_4_title": "Rich Visualization",
+        "feature_4_desc": "Create stunning dashboards with drag-and-drop ease. Interactive charts with real-time data refresh.",
+
+        "feature_5_title": "Professional Report Export",
+        "feature_5_desc": "Export analysis results in PDF, Word, Excel, and PowerPoint formats with beautiful layouts.",
+
+        "feature_6_title": "Analysis Skills Marketplace",
+        "feature_6_desc": "Built-in professional analysis skills ready to use. Supports Anthropic Skills and MCP protocol.",
+
+        "advantage_title": "Product Advantages",
+
+        "advantage_1_title": "Zero-Code Analysis",
+        "advantage_1_desc": "No technical background required. Business users can perform deep data analysis without writing code.",
+
+        "advantage_2_title": "AI-Driven Insights",
+        "advantage_2_desc": "Beyond data visualization - get actionable insights powered by advanced AI.",
+
+        "advantage_3_title": "Enterprise Integration",
+        "advantage_3_desc": "Seamless integration with mainstream cloud data warehouses and SaaS platforms.",
+
+        "advantage_4_title": "Private Deployment",
+        "advantage_4_desc": "Local data storage ensures compliance with data privacy regulations.",
+
+        "advantage_5_title": "Continuous Evolution",
+        "advantage_5_desc": "AI models continuously learn and improve, making your analysis capabilities stronger over time.",
+
+        "advantage_6_title": "Multi-Language Support",
+        "advantage_6_desc": "Full internationalization with Chinese and English support for global teams.",
+
+        "tech_stack_title": "Advanced Technology Stack",
+        "use_cases_title": "Use Cases",
+
+        "comparison_title": "Differentiated Advantages Over Similar Products",
+        "comparison_1_title": "vs. Traditional BI Tools",
+        "comparison_1_dim": "Dimension",
+        "comparison_1_trad": "Traditional BI Tools",
+        "comparison_1_rapid": "VantageData",
+        "comparison_1_learn": "Learning Curve",
+        "comparison_1_learn_trad": "High, requires professional training",
+        "comparison_1_learn_rapid": "Low, zero-barrier entry",
+        "comparison_1_deploy": "Deployment",
+        "comparison_1_deploy_trad": "Complex, requires server deployment",
+        "comparison_1_deploy_rapid": "Simple, desktop ready-to-use",
+        "comparison_1_ai": "AI Capability",
+        "comparison_1_ai_trad": "Limited or requires extra payment",
+        "comparison_1_ai_rapid": "Natively integrated, out-of-the-box",
+        "comparison_1_privacy": "Data Privacy",
+        "comparison_1_privacy_trad": "Cloud storage, potential risks",
+        "comparison_1_privacy_rapid": "Local storage, privacy-controllable",
+        "comparison_1_cost": "Cost Structure",
+        "comparison_1_cost_trad": "Expensive enterprise licenses",
+        "comparison_1_cost_rapid": "Affordable for individuals",
+        "comparison_1_use": "Use Case",
+        "comparison_1_use_trad": "For corporate IT departments",
+        "comparison_1_use_rapid": "For individuals and SMEs",
+
+        "comparison_2_title": "vs. General AI Tools",
+        "comparison_2_dim": "Dimension",
+        "comparison_2_gen": "General AI Assistants",
+        "comparison_2_rapid": "VantageData",
+        "comparison_2_sec": "Data Security",
+        "comparison_2_sec_gen": "Data uploaded to the cloud",
+        "comparison_2_sec_rapid": "Local data processing",
+        "comparison_2_chart": "Charting Capability",
+        "comparison_2_chart_gen": "Text/code responses only",
+        "comparison_2_chart_rapid": "Native visual rendering",
+        "comparison_2_scale": "Data Scale",
+        "comparison_2_scale_gen": "Limited by token context",
+        "comparison_2_scale_rapid": "Supports full dataset analysis",
+        "comparison_2_persist": "Persistence",
+        "comparison_2_persist_gen": "Lost when conversation ends",
+        "comparison_2_persist_rapid": "Full session history saved",
+        "comparison_2_offline": "Offline Capability",
+        "comparison_2_offline_gen": "Requires internet connection",
+        "comparison_2_offline_rapid": "Supports offline use",
+
+        "who_is_it_for_title": "Who It's For",
+        "who_1": "<strong>Business Managers:</strong> Quickly gain business insights to support decision-making.",
+        "who_2": "<strong>Department Heads:</strong> Monitor team KPIs and track business metrics.",
+        "who_3": "<strong>Small Business Owners:</strong> Perform data analysis without hiring a data analyst.",
+        "who_4": "<strong>Sales/Marketing Professionals:</strong> Self-service analysis of customer data and sales trends.",
+        "who_5": "<strong>Data Storytellers:</strong> Anyone who wants to tell a story with data.",
+
+        "experience_title": "User Experience Highlights",
+
+        "quick_start_title": "Quick Start",
+        "quick_1": "Download and install the VantageData application.",
+        "quick_2": "Import your data file or connect to your database.",
+        "quick_3": "Ask the AI assistant questions in natural language.",
+        "quick_4": "Get automatically generated analysis results and visual charts.",
+
+        "footer_slogan": "See Beyond Data. Master Your Vantage.",
+        "footer_copyright": "&copy; 2026 VantageData. All Rights Reserved."
+    },
+    "zh": {
+        "title": "VantageData（观界）- AI 驱动的企业级数据分析平台",
+        "nav_features": "核心功能",
+        "nav_advantage": "产品优势",
+        "nav_who_is_it_for": "适用对象",
+        "nav_quick_start": "快速开始",
+
+        "hero_title": "观界",
+        "hero_subtitle": "面向现代企业的 AI 驱动数据分析平台",
+        "hero_cta": "立即开始",
+
+        "features_title": "核心功能",
+
+        "feature_1_title": "智能 AI 数据分析助手",
+        "feature_1_desc": "通过对话方式提问，支持多轮连续追问。AI 自动识别分析意图，提供精准建议。",
+
+        "feature_2_title": "多源数据接入",
+        "feature_2_desc": "无缝连接文件、数据库、云数据仓库和电商平台。",
+
+        "feature_3_title": "智能数据洞察",
+        "feature_3_desc": "AI 自动分析数据结构、质量和模式。发现隐藏关联和异常。",
+
+        "feature_4_title": "丰富的可视化能力",
+        "feature_4_desc": "拖拽式创建精美仪表盘。交互式图表支持实时数据刷新。",
+
+        "feature_5_title": "专业报告导出",
+        "feature_5_desc": "以 PDF、Word、Excel 和 PowerPoint 格式导出分析结果，精美排版。",
+
+        "feature_6_title": "分析技能市场",
+        "feature_6_desc": "内置专业分析技能，即装即用。支持 Anthropic Skills 和 MCP 协议。",
+
+        "advantage_title": "产品优势",
+
+        "advantage_1_title": "零代码分析",
+        "advantage_1_desc": "无需技术背景，业务人员也能深度分析数据，无需编写代码。",
+
+        "advantage_2_title": "AI 驱动洞察",
+        "advantage_2_desc": "不仅是数据展示，更能提供可执行的业务建议，由先进 AI 驱动。",
+
+        "advantage_3_title": "企业级集成",
+        "advantage_3_desc": "无缝集成主流云数据仓库和 SaaS 平台。",
+
+        "advantage_4_title": "私有化部署",
+        "advantage_4_desc": "数据本地存储，满足数据隐私合规要求。",
+
+        "advantage_5_title": "持续进化",
+        "advantage_5_desc": "AI 模型持续学习和改进，让您的分析能力随时间不断增强。",
+
+        "advantage_6_title": "多语言支持",
+        "advantage_6_desc": "完整的中英文国际化支持，为全球团队提供无缝体验。",
+
+        "tech_stack_title": "先进技术栈",
+        "use_cases_title": "应用场景",
+
+        "comparison_title": "与同类产品的差异化优势",
+        "comparison_1_title": "与传统 BI 工具对比",
+        "comparison_1_dim": "对比维度",
+        "comparison_1_trad": "传统 BI 工具",
+        "comparison_1_rapid": "观界",
+        "comparison_1_learn": "学习成本",
+        "comparison_1_learn_trad": "高，需要专业培训",
+        "comparison_1_learn_rapid": "低，零门槛",
+        "comparison_1_deploy": "部署方式",
+        "comparison_1_deploy_trad": "复杂，需要服务器部署",
+        "comparison_1_deploy_rapid": "简单，桌面即用",
+        "comparison_1_ai": "AI 能力",
+        "comparison_1_ai_trad": "有限或需额外付费",
+        "comparison_1_ai_rapid": "原生集成，开箱即用",
+        "comparison_1_privacy": "数据隐私",
+        "comparison_1_privacy_trad": "云存储，存在风险",
+        "comparison_1_privacy_rapid": "本地存储，隐私可控",
+        "comparison_1_cost": "成本结构",
+        "comparison_1_cost_trad": "昂贵的企业授权",
+        "comparison_1_cost_rapid": "个人可负担",
+        "comparison_1_use": "使用场景",
+        "comparison_1_use_trad": "面向企业 IT 部门",
+        "comparison_1_use_rapid": "面向个人和中小企业",
+
+        "comparison_2_title": "与通用 AI 工具对比",
+        "comparison_2_dim": "对比维度",
+        "comparison_2_gen": "通用 AI 助手",
+        "comparison_2_rapid": "观界",
+        "comparison_2_sec": "数据安全",
+        "comparison_2_sec_gen": "数据上传到云端",
+        "comparison_2_sec_rapid": "本地数据处理",
+        "comparison_2_chart": "图表能力",
+        "comparison_2_chart_gen": "仅文字/代码响应",
+        "comparison_2_chart_rapid": "原生可视化渲染",
+        "comparison_2_scale": "数据规模",
+        "comparison_2_scale_gen": "受 token 上下文限制",
+        "comparison_2_scale_rapid": "支持完整数据集分析",
+        "comparison_2_persist": "持久化",
+        "comparison_2_persist_gen": "对话结束时丢失",
+        "comparison_2_persist_rapid": "完整会话历史保存",
+        "comparison_2_offline": "离线能力",
+        "comparison_2_offline_gen": "需要互联网连接",
+        "comparison_2_offline_rapid": "支持离线使用",
+
+        "who_is_it_for_title": "适用对象",
+        "who_1": "<strong>业务经理：</strong>快速获取业务洞察，支持决策制定。",
+        "who_2": "<strong>部门主管：</strong>监控团队 KPI，追踪业务指标。",
+        "who_3": "<strong>小企业主：</strong>无需雇佣数据分析师即可进行数据分析。",
+        "who_4": "<strong>销售/营销专业人员：</strong>自助分析客户数据和销售趋势。",
+        "who_5": "<strong>数据讲述者：</strong>任何想用数据讲故事的人。",
+
+        "experience_title": "用户体验亮点",
+
+        "quick_start_title": "快速开始",
+        "quick_1": "下载并安装观界应用程序。",
+        "quick_2": "导入数据文件或连接到数据库。",
+        "quick_3": "用自然语言向 AI 助手提问。",
+        "quick_4": "获取自动生成的分析结果和可视化图表。",
+
+        "footer_slogan": "See Beyond Data. Master Your Vantage.",
+        "footer_copyright": "&copy; 2026 VantageData（观界）. All Rights Reserved."
+    }
+};
         
         "features_title": "Core Capabilities",
         "features_subtitle": "AI-driven data analysis engine that transforms how you work with data",
@@ -195,7 +414,18 @@ const translations = {
         "footer_blog": "Blog",
         "footer_copyright": "&copy; 2026 VantageData. All Rights Reserved.",
         "footer_slogan": "See Beyond Data. Master Your Vantage.",
-        "footer_tagline_cn": "观数据之界，见商业全貌"
+        "footer_tagline_cn": "观数据之界，见商业全貌",
+
+        "nav_who_is_it_for": "Who It's For",
+        "who_is_it_for_title": "Who It's For",
+        "who_1": "<strong>Business Managers:</strong> Quickly gain business insights to support decision-making.",
+        "who_2": "<strong>Department Heads:</strong> Monitor team KPIs and track business metrics.",
+        "who_3": "<strong>Small Business Owners:</strong> Perform data analysis without hiring a data analyst.",
+        "who_4": "<strong>Sales/Marketing Professionals:</strong> Self-service analysis of customer data and sales trends.",
+        "who_5": "<strong>Data Storytellers:</strong> Anyone who wants to tell a story with data.",
+
+        "use_cases_title": "Use Cases",
+        "tech_stack_title": "Advanced Technology Stack"
     },
     "zh": {
         "title": "VantageData（观界）- AI 驱动的企业级数据分析平台",
@@ -393,222 +623,15 @@ const translations = {
         "footer_blog": "博客",
         "footer_copyright": "&copy; 2026 VantageData（观界）. All Rights Reserved.",
         "footer_slogan": "See Beyond Data. Master Your Vantage.",
-        "footer_tagline_cn": "观数据之界，见商业全貌"
-    }
-};
-        "cta_section_desc": "Join thousands of users who have revolutionized their data workflows with VantageData",
-        "cta_download": "Download Now",
-        "cta_demo": "Request Demo",
-        
-        "footer_product": "Product",
-        "footer_features": "Features",
-        "footer_pricing": "Pricing",
-        "footer_docs": "Documentation",
-        "footer_company": "Company",
-        "footer_about": "About Us",
-        "footer_contact": "Contact",
-        "footer_blog": "Blog",
-        "footer_copyright": "&copy; 2026 VantageData. All Rights Reserved.",
-        "footer_slogan": "See Beyond Data. Master Your Vantage.",
-        "footer_tagline_cn": "观数据之界，见商业全貌"
-    },
-    "zh": {
-        "title": "VantageData（观界）- AI 驱动的企业级数据分析平台",
-        "nav_features": "核心功能",
-        "nav_tech": "技术架构",
-        "nav_scenarios": "应用场景",
-        "nav_advantage": "产品优势",
-        "nav_quick_start": "快速开始",
-        
-        "hero_title": "观界",
-        "hero_subtitle_cn": "VantageData",
-        "hero_tagline": "观数据之界，见商业全貌",
-        "hero_description": "面向企业级用户的智能数据分析平台，采用 AI 驱动的数据分析引擎，通过自然语言对话快速获取数据洞察。",
-        "hero_cta": "立即开始",
-        "hero_cta_secondary": "了解更多",
-        
-        "features_title": "核心功能",
-        "features_subtitle": "AI 驱动的数据分析引擎，重新定义数据工作方式",
-        
-        "feature_ai_title": "智能 AI 数据分析助手",
-        "feature_ai_desc": "通过对话方式提问，支持多轮连续追问。AI 自动识别分析意图，提供精准建议，理解对话历史，保持分析连贯性。",
-        "feature_ai_point1": "自然语言查询 - 无需编写 SQL",
-        "feature_ai_point2": "意图智能理解与建议",
-        "feature_ai_point3": "多轮对话深入分析",
-        "feature_ai_point4": "上下文感知洞察",
-        
-        "feature_datasource_title": "多源数据接入",
-        "feature_datasource_desc": "无缝连接多种数据源 - 从文件到云数据仓库，从电商平台到项目管理工具，全面支持。",
-        "feature_datasource_files": "文件：Excel、CSV、JSON",
-        "feature_datasource_db": "数据库：MySQL、PostgreSQL、SQLite、MongoDB、Redis",
-        "feature_datasource_cloud": "云仓库：Snowflake、Google BigQuery",
-        "feature_datasource_platforms": "平台：Shopify、BigCommerce、eBay、Etsy、Jira",
-        
-        "feature_insights_title": "智能数据洞察",
-        "feature_insights_desc": "AI 自动分析数据结构、类型和质量。发现隐藏关联和异常，提供智能推荐分析维度。",
-        "feature_insights_point1": "自动数据剖析",
-        "feature_insights_point2": "智能洞察推荐",
-        "feature_insights_point3": "异常检测",
-        "feature_insights_point4": "关联分析",
-        
-        "feature_viz_title": "丰富的可视化能力",
-        "feature_viz_desc": "拖拽式创建精美仪表盘。交互式图表支持实时数据刷新和下钻分析能力。",
-        "feature_viz_point1": "多种图表类型",
-        "feature_viz_point2": "拖拽式仪表盘",
-        "feature_viz_point3": "实时数据刷新",
-        "feature_viz_point4": "交互式探索",
-        
-        "feature_export_title": "专业报告导出",
-        "feature_export_desc": "多种格式导出分析结果，精美排版，包含图表、表格和智能摘要。",
-        "feature_export_pdf": "PDF - 精美排版，含图表和摘要",
-        "feature_export_word": "Word - 可编辑完整报告",
-        "feature_export_excel": "Excel - 多工作表数据和公式",
-        "feature_export_ppt": "PowerPoint - 演示文稿格式",
-        
-        "feature_skills_title": "分析技能市场",
-        "feature_skills_desc": "内置专业分析技能，即装即用。支持 Anthropic Skills 和 MCP 协议扩展能力。",
-        "feature_skills_cohort": "群组分析 - 留存率与生命周期价值",
-        "feature_skills_funnel": "销售漏斗 - 转化流程追踪",
-        "feature_skills_anthropic": "兼容 Anthropic Skills",
-        "feature_skills_mcp": "支持 MCP 协议",
-        
-        "tech_title": "先进技术栈",
-        "tech_subtitle": "基于前沿技术构建，确保性能、安全性和可扩展性",
-        
-        "tech_stack_title": "现代化架构",
-        "tech_frontend": "前端：React + TypeScript + Tailwind CSS + Wails 2.0",
-        "tech_backend": "后端：Go 语言高性能服务",
-        "tech_ai": "AI 引擎：多 LLM 模型支持（Claude、OpenAI、Gemini、DeepSeek、GLM、Qwen）",
-        "tech_desktop": "桌面端：跨平台支持（Windows、macOS、Linux）",
-        
-        "tech_intelligent_title": "智能架构设计",
-        "tech_eino": "Eino 智能体框架 - 基于 CloudWeGo Eino 的 Agent 架构",
-        "tech_routing": "意图路由系统 - 智能分类用户请求",
-        "tech_memory": "记忆系统 - 长短期记忆结合学习",
-        "tech_tracking": "分析路径追踪 - 完整过程回放",
-        
-        "tech_security_title": "安全与隐私",
-        "tech_local": "本地数据处理 - 数据不离设备",
-        "tech_encryption": "凭证加密存储 - 安全凭证管理",
-        "tech_permissions": "权限最小化 - 只读数据库访问",
-        "tech_compliance": "隐私合规 - 满足监管要求",
-        
-        "scenarios_title": "应用场景",
-        "scenarios_subtitle": "为多样化业务需求提供强大解决方案",
-        
-        "scenario_ecommerce": "电商运营",
-        "scenario_ecommerce_desc": "销售数据分析、用户行为追踪、营销效果评估",
-        
-        "scenario_product": "产品分析",
-        "scenario_product_desc": "用户留存分析、功能使用统计、A/B 测试结果",
-        
-        "scenario_finance": "财务报表",
-        "scenario_finance_desc": "收入趋势分析、成本结构拆解、预算执行情况",
-        
-        "scenario_project": "项目管理",
-        "scenario_project_desc": "工时统计分析、任务完成情况、团队效能评估",
-        
-        "scenario_market": "市场研究",
-        "scenario_market_desc": "竞品数据对比、市场趋势分析、客户画像构建",
-        
-        "advantage_title": "产品优势",
-        "advantage_subtitle": "VantageData 为何脱颖而出",
-        
-        "advantage_1_title": "零代码分析",
-        "advantage_1_desc": "无需技术背景，业务人员也能深度分析数据，无需编写任何代码即可获得洞察。",
-        
-        "advantage_2_title": "AI 驱动洞察",
-        "advantage_2_desc": "不仅是数据展示，更能提供可执行的业务建议，AI 深度理解您的业务场景。",
-        
-        "advantage_3_title": "企业级集成",
-        "advantage_3_desc": "无缝集成主流云数据仓库和 SaaS 平台，满足企业级工作流程需求。",
-        
-        "advantage_4_title": "私有化部署",
-        "advantage_4_desc": "数据本地存储，满足数据隐私合规要求。您的数据永远不会离开您的基础设施。",
-        
-        "advantage_5_title": "持续进化",
-        "advantage_5_desc": "AI 模型持续学习和改进，让您的分析能力随时间不断增强。",
-        
-        "advantage_6_title": "多语言支持",
-        "advantage_6_desc": "完整的中英文国际化支持，为全球团队提供无缝体验。",
-        
-        "comparison_title": "VantageData 对比竞品",
-        "comparison_subtitle": "看看我们与传统 BI 工具和通用 AI 助手的对比",
-        
-        "comparison_1_title": "与传统 BI 工具对比",
-        "comparison_1_dim": "对比维度",
-        "comparison_1_trad": "传统 BI 工具",
-        "comparison_1_vantage": "观界",
-        "comparison_1_learn": "学习成本",
-        "comparison_1_learn_trad": "高 - 需要培训",
-        "comparison_1_learn_vantage": "低 - 零门槛",
-        "comparison_1_deploy": "部署方式",
-        "comparison_1_deploy_trad": "复杂服务器部署",
-        "comparison_1_deploy_vantage": "简单桌面安装",
-        "comparison_1_ai": "AI 能力",
-        "comparison_1_ai_trad": "有限或额外付费",
-        "comparison_1_ai_vantage": "原生集成",
-        "comparison_1_privacy": "数据隐私",
-        "comparison_1_privacy_trad": "云存储风险",
-        "comparison_1_privacy_vantage": "本地安全",
-        "comparison_1_cost": "成本",
-        "comparison_1_cost_trad": "昂贵授权费",
-        "comparison_1_cost_vantage": "实惠定价",
-        
-        "comparison_2_title": "与通用 AI 工具对比",
-        "comparison_2_dim": "对比维度",
-        "comparison_2_gen": "AI 助手",
-        "comparison_2_vantage": "观界",
-        "comparison_2_sec": "数据安全",
-        "comparison_2_sec_gen": "需上传云端",
-        "comparison_2_sec_vantage": "本地处理",
-        "comparison_2_chart": "可视化",
-        "comparison_2_chart_gen": "仅文字/代码",
-        "comparison_2_chart_vantage": "原生图表",
-        "comparison_2_scale": "数据规模",
-        "comparison_2_scale_gen": "Token 受限",
-        "comparison_2_scale_vantage": "完整数据集",
-        "comparison_2_persist": "持久化",
-        "comparison_2_persist_gen": "会话结束丢失",
-        "comparison_2_persist_vantage": "完整历史保存",
-        "comparison_2_offline": "离线模式",
-        "comparison_2_offline_gen": "需要联网",
-        "comparison_2_offline_vantage": "支持离线",
-        
-        "experience_title": "用户体验亮点",
-        "experience_onboarding": "新手引导向导，首次使用自动配置",
-        "experience_suggestions": "基于数据源的智能建议卡片",
-        "experience_optimization": "一键优化数据结构和查询性能",
-        "experience_progressive": "复杂功能分层展示，降低学习成本",
-        "experience_responsive": "响应式设计，适配不同屏幕尺寸",
-        
-        "quick_start_title": "几分钟即可开始",
-        "quick_start_subtitle": "四个简单步骤，释放数据的力量",
-        "quick_1_title": "下载安装",
-        "quick_1_desc": "获取适合您平台的观界桌面应用",
-        "quick_2_title": "连接数据",
-        "quick_2_desc": "导入文件或连接到您的数据源",
-        "quick_3_title": "提出问题",
-        "quick_3_desc": "使用自然语言查询您的数据",
-        "quick_4_title": "获得洞察",
-        "quick_4_desc": "接收自动化分析和可视化结果",
-        
-        "cta_section_title": "准备好转变您的数据分析方式了吗？",
-        "cta_section_desc": "加入数千名用户，用观界革新您的数据工作流程",
-        "cta_download": "立即下载",
-        "cta_demo": "申请演示",
-        
-        "footer_product": "产品",
-        "footer_features": "功能特性",
-        "footer_pricing": "价格方案",
-        "footer_docs": "文档",
-        "footer_company": "公司",
-        "footer_about": "关于我们",
-        "footer_contact": "联系我们",
-        "footer_blog": "博客",
-        "footer_copyright": "&copy; 2026 VantageData（观界）. All Rights Reserved.",
-        "footer_slogan": "See Beyond Data. Master Your Vantage.",
-        "footer_tagline_cn": "观数据之界，见商业全貌"
+        "footer_tagline_cn": "观数据之界，见商业全貌",
+
+        "nav_who_is_it_for": "适用对象",
+        "who_is_it_for_title": "适用对象",
+        "who_1": "<strong>业务经理：</strong>快速获取业务洞察，支持决策制定。",
+        "who_2": "<strong>部门主管：</strong>监控团队 KPI，追踪业务指标。",
+        "who_3": "<strong>小企业主：</strong>无需雇佣数据分析师即可进行数据分析。",
+        "who_4": "<strong>销售/营销专业人员：</strong>自助分析客户数据和销售趋势。",
+        "who_5": "<strong>数据讲述者：</strong>任何想用数据讲故事的人。"
     }
 };
 
