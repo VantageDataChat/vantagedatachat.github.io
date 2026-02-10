@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VantageData - AI-Powered Enterprise Data Analysis Platform</title>
+    <title>VantageData - AI-Powered Data Analysis Platform</title>
+    <meta name="description" content="VantageData is an AI-powered data analysis platform for modern businesses. Natural language queries, multi-source integration, and professional reporting.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style-additions.css">
+    <link rel="stylesheet" href="style-tech.css">
 </head>
 <body>
 
@@ -19,9 +20,8 @@
                 <span class="logo-cn">观界</span>
             </div>
             <ul>
-                <li><a href="#features" data-lang-key="nav_features">Core Features</a></li>
-                <li><a href="#advantage" data-lang-key="nav_advantage">Product Advantage</a></li>
-                <li><a href="#who-is-it-for" data-lang-key="nav_who_is_it_for">Who It's For</a></li>
+                <li><a href="#features" data-lang-key="nav_features">Features</a></li>
+                <li><a href="#advantages" data-lang-key="nav_advantage">Advantages</a></li>
                 <li><a href="#quick-start" data-lang-key="nav_quick_start">Quick Start</a></li>
                 <li><button id="lang-switcher">中文</button></li>
             </ul>
@@ -29,321 +29,242 @@
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="hero">
+            <div class="hero-bg-pattern"></div>
             <div class="hero-content">
                 <h1 data-lang-key="hero_title">VantageData</h1>
-                <p class="hero-tagline" data-lang-key="hero_subtitle">AI-Powered Data Analysis Platform for Modern Businesses</p>
+                <p class="hero-tagline" data-lang-key="hero_subtitle">AI-Powered Data Analysis for Modern Businesses</p>
                 <p class="hero-slogan">See Beyond Data. Master Your Vantage.</p>
                 <p class="hero-slogan-cn">观数据之界，见商业全貌</p>
                 <a href="#quick-start" class="cta-button" data-lang-key="hero_cta">Get Started</a>
             </div>
-            <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop&q=80" alt="Data Analytics Dashboard" />
+            <div class="hero-visual">
+                <div class="data-flow">
+                    <div class="data-node"></div>
+                    <div class="data-node"></div>
+                    <div class="data-node"></div>
+                    <div class="data-node"></div>
+                </div>
+                <div class="chart-preview">
+                    <svg viewBox="0 0 200 120" class="animated-chart">
+                        <path d="M10,100 L40,80 L70,60 L100,40 L130,50 L160,30 L190,20" stroke="url(#gradient1)" stroke-width="3" fill="none"/>
+                        <circle cx="10" cy="100" r="4" fill="#6366F1"/>
+                        <circle cx="40" cy="80" r="4" fill="#6366F1"/>
+                        <circle cx="70" cy="60" r="4" fill="#6366F1"/>
+                        <circle cx="100" cy="40" r="4" fill="#6366F1"/>
+                        <circle cx="130" cy="50" r="4" fill="#6366F1"/>
+                        <circle cx="160" cy="30" r="4" fill="#6366F1"/>
+                        <circle cx="190" cy="20" r="4" fill="#6366F1"/>
+                        <defs>
+                            <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#6366F1;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
             </div>
         </section>
 
+        <!-- Features Section -->
         <section id="features">
             <h2 data-lang-key="features_title">Core Features</h2>
             <div class="feature-grid">
                 <div class="feature-item">
-                    <div class="feature-icon">🤖</div>
-                    <h3 data-lang-key="feature_1_title">Intelligent AI Data Assistant</h3>
-                    <p data-lang-key="feature_1_desc">Natural language queries with multi-turn conversation support. AI understands your intent and provides precise analysis recommendations.</p>
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72 1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    </div>
+                    <h3 data-lang-key="feature_1_title">AI Data Assistant</h3>
+                    <p data-lang-key="feature_1_desc">Natural language queries with multi-turn conversation. AI understands your intent and provides precise analysis.</p>
                 </div>
                 <div class="feature-item">
-                    <div class="feature-icon">🔗</div>
-                    <h3 data-lang-key="feature_2_title">Multi-Source Data Integration</h3>
-                    <p data-lang-key="feature_2_desc">Connect seamlessly to files, databases, cloud warehouses, and e-commerce platforms.</p>
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                    </div>
+                    <h3 data-lang-key="feature_2_title">Multi-Source Integration</h3>
+                    <p data-lang-key="feature_2_desc">Connect to files, databases, cloud warehouses, and e-commerce platforms seamlessly.</p>
                 </div>
                 <div class="feature-item">
-                    <div class="feature-icon">💡</div>
-                    <h3 data-lang-key="feature_3_title">Intelligent Data Insights</h3>
-                    <p data-lang-key="feature_3_desc">AI automatically analyzes data structure, quality, and patterns. Discover hidden correlations and anomalies.</p>
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                    </div>
+                    <h3 data-lang-key="feature_3_title">Smart Insights</h3>
+                    <p data-lang-key="feature_3_desc">AI analyzes data structure, quality, and patterns. Discover hidden correlations and anomalies.</p>
                 </div>
                 <div class="feature-item">
-                    <div class="feature-icon">📊</div>
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                    </div>
                     <h3 data-lang-key="feature_4_title">Rich Visualization</h3>
-                    <p data-lang-key="feature_4_desc">Create stunning dashboards with drag-and-drop ease. Interactive charts with real-time data refresh.</p>
+                    <p data-lang-key="feature_4_desc">Create dashboards with drag-and-drop. Interactive charts with real-time data refresh.</p>
                 </div>
                 <div class="feature-item">
-                    <div class="feature-icon">📄</div>
-                    <h3 data-lang-key="feature_5_title">Professional Report Export</h3>
-                    <p data-lang-key="feature_5_desc">Export analysis results in PDF, Word, Excel, and PowerPoint formats with beautiful layouts.</p>
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                    </div>
+                    <h3 data-lang-key="feature_5_title">Report Export</h3>
+                    <p data-lang-key="feature_5_desc">Export to PDF, Word, Excel, and PowerPoint with professional layouts.</p>
                 </div>
                 <div class="feature-item">
-                    <div class="feature-icon">🎯</div>
-                    <h3 data-lang-key="feature_6_title">Analysis Skills Marketplace</h3>
-                    <p data-lang-key="feature_6_desc">Built-in professional analysis skills ready to use. Supports Anthropic Skills and MCP protocol.</p>
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <h3 data-lang-key="feature_6_title">Skills Marketplace</h3>
+                    <p data-lang-key="feature_6_desc">Built-in analysis skills ready to use. Supports Anthropic Skills and MCP protocol.</p>
                 </div>
             </div>
         </section>
 
-        <section id="advantage">
-            <h2 data-lang-key="advantage_title">Product Advantages</h2>
+        <!-- Advantages Section -->
+        <section id="advantages" class="alt-bg">
+            <h2 data-lang-key="advantage_title">Why VantageData</h2>
             <div class="advantage-grid">
                 <div class="advantage-item">
                     <div class="advantage-number">01</div>
-                    <h3 data-lang-key="advantage_1_title">Zero-Code Analysis</h3>
-                    <p data-lang-key="advantage_1_desc">No technical background required. Business users can perform deep data analysis without writing code.</p>
+                    <h3 data-lang-key="advantage_1_title">Zero-Code</h3>
+                    <p data-lang-key="advantage_1_desc">No technical background required. Perform deep data analysis without writing code.</p>
                 </div>
                 <div class="advantage-item">
                     <div class="advantage-number">02</div>
-                    <h3 data-lang-key="advantage_2_title">AI-Driven Insights</h3>
-                    <p data-lang-key="advantage_2_desc">Beyond data visualization - get actionable insights powered by advanced AI.</p>
+                    <h3 data-lang-key="advantage_2_title">AI-Driven</h3>
+                    <p data-lang-key="advantage_2_desc">Beyond visualization—get actionable insights powered by advanced AI.</p>
                 </div>
                 <div class="advantage-item">
                     <div class="advantage-number">03</div>
-                    <h3 data-lang-key="advantage_3_title">Enterprise Integration</h3>
-                    <p data-lang-key="advantage_3_desc">Seamless integration with mainstream cloud data warehouses and SaaS platforms.</p>
+                    <h3 data-lang-key="advantage_3_title">Enterprise Ready</h3>
+                    <p data-lang-key="advantage_3_desc">Seamless integration with cloud data warehouses and SaaS platforms.</p>
                 </div>
-                 <div class="advantage-item">
+                <div class="advantage-item">
                     <div class="advantage-number">04</div>
-                    <h3 data-lang-key="advantage_4_title">Private Deployment</h3>
+                    <h3 data-lang-key="advantage_4_title">Privacy First</h3>
                     <p data-lang-key="advantage_4_desc">Local data storage ensures compliance with data privacy regulations.</p>
                 </div>
-                <div class="advantage-item">
-                    <div class="advantage-number">05</div>
-                    <h3 data-lang-key="advantage_5_title">Continuous Evolution</h3>
-                    <p data-lang-key="advantage_5_desc">AI models continuously learn and improve, making your analysis capabilities stronger over time.</p>
+            </div>
+        </section>
+
+        <!-- Comparison Section -->
+        <section id="comparison">
+            <h2 data-lang-key="comparison_title">Competitive Edge</h2>
+            <div class="comparison-grid">
+                <div class="comparison-item">
+                    <div class="comparison-label" data-lang-key="comparison_1_learn">Learning Curve</div>
+                    <div class="comparison-vs">
+                        <span class="vs-bad" data-lang-key="comparison_1_learn_trad">High</span>
+                        <span class="vs-good" data-lang-key="comparison_1_learn_rapid">Zero Barrier</span>
+                    </div>
                 </div>
-                <div class="advantage-item">
-                    <div class="advantage-number">06</div>
-                    <h3 data-lang-key="advantage_6_title">Multi-Language Support</h3>
-                    <p data-lang-key="advantage_6_desc">Full internationalization with Chinese and English support for global teams.</p>
+                <div class="comparison-item">
+                    <div class="comparison-label" data-lang-key="comparison_1_deploy">Deployment</div>
+                    <div class="comparison-vs">
+                        <span class="vs-bad" data-lang-key="comparison_1_deploy_trad">Complex</span>
+                        <span class="vs-good" data-lang-key="comparison_1_deploy_rapid">Desktop Ready</span>
+                    </div>
+                </div>
+                <div class="comparison-item">
+                    <div class="comparison-label" data-lang-key="comparison_1_ai">AI Capability</div>
+                    <div class="comparison-vs">
+                        <span class="vs-bad" data-lang-key="comparison_1_ai_trad">Limited</span>
+                        <span class="vs-good" data-lang-key="comparison_1_ai_rapid">Native & Integrated</span>
+                    </div>
+                </div>
+                <div class="comparison-item">
+                    <div class="comparison-label" data-lang-key="comparison_2_sec">Data Security</div>
+                    <div class="comparison-vs">
+                        <span class="vs-bad" data-lang-key="comparison_2_sec_gen">Cloud Upload</span>
+                        <span class="vs-good" data-lang-key="comparison_2_sec_rapid">Local Processing</span>
+                    </div>
+                </div>
+                <div class="comparison-item">
+                    <div class="comparison-label" data-lang-key="comparison_2_scale">Data Scale</div>
+                    <div class="comparison-vs">
+                        <span class="vs-bad" data-lang-key="comparison_2_scale_gen">Token Limited</span>
+                        <span class="vs-good" data-lang-key="comparison_2_scale_rapid">Full Dataset</span>
+                    </div>
+                </div>
+                <div class="comparison-item">
+                    <div class="comparison-label" data-lang-key="comparison_1_cost">Cost</div>
+                    <div class="comparison-vs">
+                        <span class="vs-bad" data-lang-key="comparison_1_cost_trad">Enterprise License</span>
+                        <span class="vs-good" data-lang-key="comparison_1_cost_rapid">Affordable</span>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="tech-stack">
-            <h2 data-lang-key="tech_stack_title">Advanced Technology Stack</h2>
-            <div class="tech-grid">
-                <div class="tech-category">
-                    <h3 data-lang-key="tech_modern_title">Modern Architecture</h3>
-                    <ul>
-                        <li data-lang-key="tech_frontend"><strong>Frontend:</strong> React + TypeScript + Tailwind CSS + Wails 2.0</li>
-                        <li data-lang-key="tech_backend"><strong>Backend:</strong> Go high-performance service</li>
-                        <li data-lang-key="tech_ai"><strong>AI Engine:</strong> Multi-LLM support (Claude, OpenAI, Gemini, DeepSeek, GLM, Qwen)</li>
-                        <li data-lang-key="tech_desktop"><strong>Desktop:</strong> Cross-platform (Windows, macOS, Linux)</li>
-                    </ul>
-                </div>
-                <div class="tech-category">
-                    <h3 data-lang-key="tech_intelligent_title">Intelligent Architecture</h3>
-                    <ul>
-                        <li data-lang-key="tech_eino"><strong>Eino Agent Framework:</strong> CloudWeGo Eino-based architecture</li>
-                        <li data-lang-key="tech_routing"><strong>Intent Routing:</strong> Smart request classification</li>
-                        <li data-lang-key="tech_memory"><strong>Memory System:</strong> Long & short-term learning</li>
-                        <li data-lang-key="tech_tracking"><strong>Analysis Tracking:</strong> Complete process replay</li>
-                    </ul>
-                </div>
-                <div class="tech-category">
-                    <h3 data-lang-key="tech_security_title">Security & Privacy</h3>
-                    <ul>
-                        <li data-lang-key="tech_local"><strong>Local Processing:</strong> Data stays on your device</li>
-                        <li data-lang-key="tech_encryption"><strong>Encrypted Storage:</strong> Secure credential management</li>
-                        <li data-lang-key="tech_permissions"><strong>Minimal Permissions:</strong> Read-only database access</li>
-                        <li data-lang-key="tech_compliance"><strong>Privacy Compliant:</strong> Meets regulatory requirements</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="use-cases">
+        <!-- Use Cases Section -->
+        <section id="use-cases" class="alt-bg">
             <h2 data-lang-key="use_cases_title">Use Cases</h2>
             <div class="use-cases-grid">
                 <div class="use-case-item">
-                    <h3 data-lang-key="use_case_ecommerce_title">🛒 E-commerce Operations</h3>
-                    <p data-lang-key="use_case_ecommerce_desc">Sales analysis, user behavior tracking, marketing effectiveness evaluation</p>
+                    <h3 data-lang-key="use_case_ecommerce_title">E-commerce</h3>
+                    <p data-lang-key="use_case_ecommerce_desc">Sales analysis, user behavior, marketing effectiveness</p>
                 </div>
                 <div class="use-case-item">
-                    <h3 data-lang-key="use_case_product_title">📱 Product Analysis</h3>
-                    <p data-lang-key="use_case_product_desc">User retention analysis, feature usage statistics, A/B testing results</p>
+                    <h3 data-lang-key="use_case_product_title">Product</h3>
+                    <p data-lang-key="use_case_product_desc">Retention analysis, feature usage, A/B testing</p>
                 </div>
                 <div class="use-case-item">
-                    <h3 data-lang-key="use_case_finance_title">💰 Financial Reporting</h3>
-                    <p data-lang-key="use_case_finance_desc">Revenue trends, cost structure analysis, budget execution tracking</p>
+                    <h3 data-lang-key="use_case_finance_title">Finance</h3>
+                    <p data-lang-key="use_case_finance_desc">Revenue trends, cost analysis, budget tracking</p>
                 </div>
                 <div class="use-case-item">
-                    <h3 data-lang-key="use_case_project_title">📋 Project Management</h3>
-                    <p data-lang-key="use_case_project_desc">Time tracking, task completion analysis, team efficiency assessment</p>
-                </div>
-                <div class="use-case-item">
-                    <h3 data-lang-key="use_case_market_title">📈 Market Research</h3>
-                    <p data-lang-key="use_case_market_desc">Competitive analysis, market trends, customer profiling</p>
-                </div>
-            </div>
-        </section>
-        
-        <section id="comparison">
-            <h2 data-lang-key="comparison_title">Differentiated Advantages Over Similar Products</h2>
-            <div class="comparison-container">
-                <div class="comparison-table">
-                    <h3 data-lang-key="comparison_1_title">vs. Traditional BI Tools</h3>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th data-lang-key="comparison_1_dim">Dimension</th>
-                                <th data-lang-key="comparison_1_trad">Traditional BI Tools</th>
-                                <th data-lang-key="comparison_1_rapid">VantageData</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td data-lang-key="comparison_1_learn">Learning Curve</td>
-                                <td data-lang-key="comparison_1_learn_trad">High, requires professional training</td>
-                                <td class="highlight" data-lang-key="comparison_1_learn_rapid">Low, zero-barrier entry</td>
-                            </tr>
-                            <tr>
-                                <td data-lang-key="comparison_1_deploy">Deployment</td>
-                                <td data-lang-key="comparison_1_deploy_trad">Complex, requires server deployment</td>
-                                <td class="highlight" data-lang-key="comparison_1_deploy_rapid">Simple, desktop ready-to-use</td>
-                            </tr>
-                            <tr>
-                                <td data-lang-key="comparison_1_ai">AI Capability</td>
-                                <td data-lang-key="comparison_1_ai_trad">Limited or requires extra payment</td>
-                                <td class="highlight" data-lang-key="comparison_1_ai_rapid">Natively integrated, out-of-the-box</td>
-                            </tr>
-                            <tr>
-                                <td data-lang-key="comparison_1_privacy">Data Privacy</td>
-                                <td data-lang-key="comparison_1_privacy_trad">Cloud storage, potential risks</td>
-                                <td class="highlight" data-lang-key="comparison_1_privacy_rapid">Local storage, privacy-controllable</td>
-                            </tr>
-                             <tr>
-                                <td data-lang-key="comparison_1_cost">Cost Structure</td>
-                                <td data-lang-key="comparison_1_cost_trad">Expensive enterprise licenses</td>
-                                <td class="highlight" data-lang-key="comparison_1_cost_rapid">Affordable for individuals</td>
-                            </tr>
-                             <tr>
-                                <td data-lang-key="comparison_1_use">Use Case</td>
-                                <td data-lang-key="comparison_1_use_trad">For corporate IT departments</td>
-                                <td class="highlight" data-lang-key="comparison_1_use_rapid">For individuals and SMEs</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="comparison-table">
-                    <h3 data-lang-key="comparison_2_title">vs. General AI Tools</h3>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th data-lang-key="comparison_2_dim">Dimension</th>
-                                <th data-lang-key="comparison_2_gen">General AI Assistants</th>
-                                <th data-lang-key="comparison_2_rapid">VantageData</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td data-lang-key="comparison_2_sec">Data Security</td>
-                                <td data-lang-key="comparison_2_sec_gen">Data uploaded to the cloud</td>
-                                <td class="highlight" data-lang-key="comparison_2_sec_rapid">Local data processing</td>
-                            </tr>
-                            <tr>
-                                <td data-lang-key="comparison_2_chart">Charting Capability</td>
-                                <td data-lang-key="comparison_2_chart_gen">Text/code responses only</td>
-                                <td class="highlight" data-lang-key="comparison_2_chart_rapid">Native visual rendering</td>
-                            </tr>
-                            <tr>
-                                <td data-lang-key="comparison_2_scale">Data Scale</td>
-                                <td data-lang-key="comparison_2_scale_gen">Limited by token context</td>
-                                <td class="highlight" data-lang-key="comparison_2_scale_rapid">Supports full dataset analysis</td>
-                            </tr>
-                            <tr>
-                                <td data-lang-key="comparison_2_persist">Persistence</td>
-                                <td data-lang-key="comparison_2_persist_gen">Lost when conversation ends</td>
-                                <td class="highlight" data-lang-key="comparison_2_persist_rapid">Full session history saved</td>
-                            </tr>
-                            <tr>
-                                <td data-lang-key="comparison_2_offline">Offline Capability</td>
-                                <td data-lang-key="comparison_2_offline_gen">Requires internet connection</td>
-                                <td class="highlight" data-lang-key="comparison_2_offline_rapid">Supports offline use</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <h3 data-lang-key="use_case_project_title">Project</h3>
+                    <p data-lang-key="use_case_project_desc">Time tracking, task completion, team efficiency</p>
                 </div>
             </div>
         </section>
 
-        <section id="who-is-it-for">
-            <h2 data-lang-key="who_is_it_for_title">Who It's For</h2>
-            <ul>
-                <li data-lang-key="who_1"><strong>Business Managers:</strong> Quickly gain business insights to support decision-making.</li>
-                <li data-lang-key="who_2"><strong>Department Heads:</strong> Monitor team KPIs and track business metrics.</li>
-                <li data-lang-key="who_3"><strong>Small Business Owners:</strong> Perform data analysis without hiring a data analyst.</li>
-                <li data-lang-key="who_4"><strong>Sales/Marketing Professionals:</strong> Self-service analysis of customer data and sales trends.</li>
-                <li data-lang-key="who_5"><strong>Data Storytellers:</strong> Anyone who wants to tell a story with data.</li>
-            </ul>
-        </section>
-
-        <section id="experience">
-            <h2 data-lang-key="experience_title">User Experience Highlights</h2>
-            <div class="experience-grid">
-                <div class="experience-item">
-                    <div class="experience-icon">🎓</div>
-                    <h3 data-lang-key="experience_onboarding_title">Guided Onboarding</h3>
-                    <p data-lang-key="experience_onboarding_desc">First-time setup wizard automatically guides you through data source configuration</p>
-                </div>
-                <div class="experience-item">
-                    <div class="experience-icon">💡</div>
-                    <h3 data-lang-key="experience_suggestions_title">Smart Suggestions</h3>
-                    <p data-lang-key="experience_suggestions_desc">AI-powered suggestion cards based on your data sources and analysis patterns</p>
-                </div>
-                <div class="experience-item">
-                    <div class="experience-icon">⚡</div>
-                    <h3 data-lang-key="experience_optimization_title">One-Click Optimization</h3>
-                    <p data-lang-key="experience_optimization_desc">Automatically optimize data structure and query performance with a single click</p>
-                </div>
-                <div class="experience-item">
-                    <div class="experience-icon">📐</div>
-                    <h3 data-lang-key="experience_progressive_title">Progressive Disclosure</h3>
-                    <p data-lang-key="experience_progressive_desc">Complex features revealed gradually, reducing learning curve</p>
-                </div>
-                <div class="experience-item">
-                    <div class="experience-icon">📱</div>
-                    <h3 data-lang-key="experience_responsive_title">Responsive Design</h3>
-                    <p data-lang-key="experience_responsive_desc">Adapts seamlessly to different screen sizes and resolutions</p>
-                </div>
-            </div>
-        </section>
-
+        <!-- Quick Start Section -->
         <section id="quick-start">
             <h2 data-lang-key="quick_start_title">Quick Start</h2>
             <div class="quick-start-grid">
                 <div class="quick-start-item">
                     <div class="step-number">1</div>
-                    <h3 data-lang-key="quick_1_title">Download & Install</h3>
-                    <p data-lang-key="quick_1">Download and install the VantageData application.</p>
+                    <h3 data-lang-key="quick_1_title">Download</h3>
+                    <p data-lang-key="quick_1">Install VantageData on your device.</p>
                 </div>
                 <div class="quick-start-item">
                     <div class="step-number">2</div>
-                    <h3 data-lang-key="quick_2_title">Connect Data</h3>
-                    <p data-lang-key="quick_2">Import your data file or connect to your database.</p>
+                    <h3 data-lang-key="quick_2_title">Connect</h3>
+                    <p data-lang-key="quick_2">Import files or connect to databases.</p>
                 </div>
                 <div class="quick-start-item">
                     <div class="step-number">3</div>
-                    <h3 data-lang-key="quick_3_title">Ask Questions</h3>
-                    <p data-lang-key="quick_3">Ask the AI assistant questions in natural language.</p>
+                    <h3 data-lang-key="quick_3_title">Ask</h3>
+                    <p data-lang-key="quick_3">Query data in natural language.</p>
                 </div>
                 <div class="quick-start-item">
                     <div class="step-number">4</div>
-                    <h3 data-lang-key="quick_4_title">Get Insights</h3>
-                    <p data-lang-key="quick_4">Get automatically generated analysis results and visual charts.</p>
+                    <h3 data-lang-key="quick_4_title">Insights</h3>
+                    <p data-lang-key="quick_4">Get analysis and visualizations instantly.</p>
                 </div>
+            </div>
+
+            <div class="download-section">
+                <h3 data-lang-key="download_title">Ready to Get Started?</h3>
+                <p data-lang-key="download_desc">Download VantageData and transform your data analysis workflow today.</p>
+                <a href="https://github.com/VantageDataChat/VantageData/releases" class="download-button" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                    <span data-lang-key="download_button">Download Now</span>
+                </a>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="footer-content">
-            <div class="footer-brand">
-                <div class="footer-logo">
-                    <span class="logo-en">VantageData</span>
-                    <span class="logo-cn">观界</span>
-                </div>
-                <p class="footer-slogan" data-lang-key="footer_slogan">See Beyond Data. Master Your Vantage.</p>
-                <p class="footer-slogan-cn">观数据之界，见商业全貌</p>
+            <div class="footer-logo">
+                <span class="logo-en">VantageData</span>
+                <span class="logo-cn">观界</span>
             </div>
-            <div class="footer-bottom">
-                <p data-lang-key="footer_copyright">&copy; 2026 VantageData. All Rights Reserved.</p>
-            </div>
+            <p class="footer-slogan" data-lang-key="footer_slogan">See Beyond Data. Master Your Vantage.</p>
+            <p class="footer-slogan-cn">观数据之界，见商业全貌</p>
+            <p class="footer-copyright" data-lang-key="footer_copyright">&copy; 2026 VantageData. All Rights Reserved.</p>
         </div>
     </footer>
 

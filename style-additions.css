@@ -257,6 +257,27 @@
     font-size: 1.2rem;
 }
 
+/* Language-specific visibility */
+html[lang="en"] .logo-cn,
+html[lang="en"] .hero-slogan-cn,
+html[lang="en"] .footer-slogan-cn {
+    display: none;
+}
+
+html[lang="zh"] .hero-slogan,
+html[lang="zh"] .footer-slogan {
+    display: none;
+}
+
+html[lang="zh"] .logo-en {
+    display: none;
+}
+
+html[lang="zh"] .logo-cn {
+    opacity: 1;
+    margin-left: 0;
+}
+
 /* Hero Content */
 .hero-content {
     position: relative;
