@@ -10,6 +10,13 @@
     --border: #E2E8F0;
     --success: #10B981;
     --danger: #EF4444;
+    --accent-gradient: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);
+    --section-bg-color: #F8FAFC;
+    --text-color: #475569;
+    --heading-color: #0F172A;
+    --primary-color: #6366F1;
+    --border-color: #E2E8F0;
+    --light-text-color: #FFFFFF;
 }
 
 * {

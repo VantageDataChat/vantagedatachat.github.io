@@ -552,6 +552,7 @@
     height: 200%;
     background: radial-gradient(circle, rgba(99, 102, 241, 0.2) 0%, transparent 70%);
     animation: rotate 30s linear infinite;
+    pointer-events: none;
 }
 
 @keyframes rotate {
