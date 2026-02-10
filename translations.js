@@ -160,6 +160,10 @@ const translations = {
         "quick_3": "Ask the AI assistant questions in natural language.",
         "quick_4": "Get automatically generated analysis results and visual charts.",
 
+        "download_title": "Ready to Get Started?",
+        "download_desc": "Download VantageData and transform your data analysis workflow today.",
+        "download_button": "Download Now",
+
         "footer_slogan": "See Beyond Data. Master Your Vantage.",
         "footer_copyright": "&copy; 2026 VantageData. All Rights Reserved."
     },
