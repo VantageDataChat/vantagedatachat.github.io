@@ -493,119 +493,134 @@
         </section>
 
         <!-- Comparison Section -->
-        <section id="comparison">
+        <section id="comparison" class="alt-bg">
             <h2 data-lang-key="comparison_title">Competitive Edge</h2>
             <p class="section-subtitle" data-lang-key="comparison_subtitle">See how we stack up against traditional tools</p>
-            <div class="comparison-table-wrapper">
-                <div class="comparison-header">
-                    <div class="comparison-col comparison-col-label"></div>
-                    <div class="comparison-col comparison-col-trad">
-                        <span class="col-icon">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M7 7h10v10H7z"/></svg>
-                        </span>
-                        <span>Traditional BI</span>
+            <div class="comparison-grid">
+                <div class="comparison-card">
+                    <div class="comparison-card-header">
+                        <div class="comparison-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                        </div>
+                        <span class="comparison-dimension" data-lang-key="comparison_1_learn">Learning Curve</span>
                     </div>
-                    <div class="comparison-col comparison-col-vantagics">
-                        <span class="col-icon">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        </span>
-                        <span>Vantagics</span>
+                    <div class="comparison-card-body">
+                        <div class="comparison-option">
+                            <span class="comparison-label">Traditional BI</span>
+                            <span class="comparison-value comparison-value-bad" data-lang-key="comparison_1_learn_trad">High</span>
+                            <p class="comparison-text">Weeks of training required</p>
+                        </div>
+                        <div class="comparison-vs">vs</div>
+                        <div class="comparison-option">
+                            <span class="comparison-label">Vantagics</span>
+                            <span class="comparison-value comparison-value-good" data-lang-key="comparison_1_learn_rapid">Zero Barrier</span>
+                            <p class="comparison-text">Start in 5 minutes</p>
+                        </div>
                     </div>
                 </div>
-                <div class="comparison-row">
-                    <div class="comparison-col comparison-col-label">
-                        <div class="row-icon">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                <div class="comparison-card">
+                    <div class="comparison-card-header">
+                        <div class="comparison-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
                         </div>
-                        <span data-lang-key="comparison_1_learn">Learning Curve</span>
+                        <span class="comparison-dimension" data-lang-key="comparison_1_deploy">Deployment</span>
                     </div>
-                    <div class="comparison-col comparison-col-trad">
-                        <span class="tag tag-bad" data-lang-key="comparison_1_learn_trad">High</span>
-                        <p class="comparison-desc">Weeks of training required</p>
-                    </div>
-                    <div class="comparison-col comparison-col-vantagics">
-                        <span class="tag tag-good" data-lang-key="comparison_1_learn_rapid">Zero Barrier</span>
-                        <p class="comparison-desc">Start in 5 minutes</p>
+                    <div class="comparison-card-body">
+                        <div class="comparison-option">
+                            <span class="comparison-label">Traditional BI</span>
+                            <span class="comparison-value comparison-value-bad" data-lang-key="comparison_1_deploy_trad">Complex</span>
+                            <p class="comparison-text">Server infrastructure needed</p>
+                        </div>
+                        <div class="comparison-vs">vs</div>
+                        <div class="comparison-option">
+                            <span class="comparison-label">Vantagics</span>
+                            <span class="comparison-value comparison-value-good" data-lang-key="comparison_1_deploy_rapid">Desktop Ready</span>
+                            <p class="comparison-text">Download & install instantly</p>
+                        </div>
                     </div>
                 </div>
-                <div class="comparison-row">
-                    <div class="comparison-col comparison-col-label">
-                        <div class="row-icon">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                <div class="comparison-card">
+                    <div class="comparison-card-header">
+                        <div class="comparison-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
                         </div>
-                        <span data-lang-key="comparison_1_deploy">Deployment</span>
+                        <span class="comparison-dimension" data-lang-key="comparison_1_ai">AI Capability</span>
                     </div>
-                    <div class="comparison-col comparison-col-trad">
-                        <span class="tag tag-bad" data-lang-key="comparison_1_deploy_trad">Complex</span>
-                        <p class="comparison-desc">Server infrastructure needed</p>
-                    </div>
-                    <div class="comparison-col comparison-col-vantagics">
-                        <span class="tag tag-good" data-lang-key="comparison_1_deploy_rapid">Desktop Ready</span>
-                        <p class="comparison-desc">Download & install instantly</p>
+                    <div class="comparison-card-body">
+                        <div class="comparison-option">
+                            <span class="comparison-label">Traditional BI</span>
+                            <span class="comparison-value comparison-value-bad" data-lang-key="comparison_1_ai_trad">Limited</span>
+                            <p class="comparison-text">Basic charts only</p>
+                        </div>
+                        <div class="comparison-vs">vs</div>
+                        <div class="comparison-option">
+                            <span class="comparison-label">Vantagics</span>
+                            <span class="comparison-value comparison-value-good" data-lang-key="comparison_1_ai_rapid">Native & Integrated</span>
+                            <p class="comparison-text">Full AI-powered insights</p>
+                        </div>
                     </div>
                 </div>
-                <div class="comparison-row">
-                    <div class="comparison-col comparison-col-label">
-                        <div class="row-icon">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                <div class="comparison-card">
+                    <div class="comparison-card-header">
+                        <div class="comparison-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                         </div>
-                        <span data-lang-key="comparison_1_ai">AI Capability</span>
+                        <span class="comparison-dimension" data-lang-key="comparison_2_sec">Data Security</span>
                     </div>
-                    <div class="comparison-col comparison-col-trad">
-                        <span class="tag tag-bad" data-lang-key="comparison_1_ai_trad">Limited</span>
-                        <p class="comparison-desc">Basic charts only</p>
-                    </div>
-                    <div class="comparison-col comparison-col-vantagics">
-                        <span class="tag tag-good" data-lang-key="comparison_1_ai_rapid">Native & Integrated</span>
-                        <p class="comparison-desc">Full AI-powered insights</p>
+                    <div class="comparison-card-body">
+                        <div class="comparison-option">
+                            <span class="comparison-label">Traditional BI</span>
+                            <span class="comparison-value comparison-value-bad" data-lang-key="comparison_2_sec_gen">Cloud Upload</span>
+                            <p class="comparison-text">Data leaves your premises</p>
+                        </div>
+                        <div class="comparison-vs">vs</div>
+                        <div class="comparison-option">
+                            <span class="comparison-label">Vantagics</span>
+                            <span class="comparison-value comparison-value-good" data-lang-key="comparison_2_sec_rapid">Local Processing</span>
+                            <p class="comparison-text">100% data privacy</p>
+                        </div>
                     </div>
                 </div>
-                <div class="comparison-row">
-                    <div class="comparison-col comparison-col-label">
-                        <div class="row-icon">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <div class="comparison-card">
+                    <div class="comparison-card-header">
+                        <div class="comparison-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
                         </div>
-                        <span data-lang-key="comparison_2_sec">Data Security</span>
+                        <span class="comparison-dimension" data-lang-key="comparison_2_scale">Data Scale</span>
                     </div>
-                    <div class="comparison-col comparison-col-trad">
-                        <span class="tag tag-bad" data-lang-key="comparison_2_sec_gen">Cloud Upload</span>
-                        <p class="comparison-desc">Data leaves your premises</p>
-                    </div>
-                    <div class="comparison-col comparison-col-vantagics">
-                        <span class="tag tag-good" data-lang-key="comparison_2_sec_rapid">Local Processing</span>
-                        <p class="comparison-desc">100% data privacy</p>
+                    <div class="comparison-card-body">
+                        <div class="comparison-option">
+                            <span class="comparison-label">Traditional BI</span>
+                            <span class="comparison-value comparison-value-bad" data-lang-key="comparison_2_scale_gen">Token Limited</span>
+                            <p class="comparison-text">Restricted by AI context</p>
+                        </div>
+                        <div class="comparison-vs">vs</div>
+                        <div class="comparison-option">
+                            <span class="comparison-label">Vantagics</span>
+                            <span class="comparison-value comparison-value-good" data-lang-key="comparison_2_scale_rapid">Full Dataset</span>
+                            <p class="comparison-text">Analyze unlimited data</p>
+                        </div>
                     </div>
                 </div>
-                <div class="comparison-row">
-                    <div class="comparison-col comparison-col-label">
-                        <div class="row-icon">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+                <div class="comparison-card">
+                    <div class="comparison-card-header">
+                        <div class="comparison-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
                         </div>
-                        <span data-lang-key="comparison_2_scale">Data Scale</span>
+                        <span class="comparison-dimension" data-lang-key="comparison_1_cost">Cost</span>
                     </div>
-                    <div class="comparison-col comparison-col-trad">
-                        <span class="tag tag-bad" data-lang-key="comparison_2_scale_gen">Token Limited</span>
-                        <p class="comparison-desc">Restricted by AI context</p>
-                    </div>
-                    <div class="comparison-col comparison-col-vantagics">
-                        <span class="tag tag-good" data-lang-key="comparison_2_scale_rapid">Full Dataset</span>
-                        <p class="comparison-desc">Analyze unlimited data</p>
-                    </div>
-                </div>
-                <div class="comparison-row">
-                    <div class="comparison-col comparison-col-label">
-                        <div class="row-icon">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    <div class="comparison-card-body">
+                        <div class="comparison-option">
+                            <span class="comparison-label">Traditional BI</span>
+                            <span class="comparison-value comparison-value-bad" data-lang-key="comparison_1_cost_trad">Enterprise License</span>
+                            <p class="comparison-text">$10K+ per year</p>
                         </div>
-                        <span data-lang-key="comparison_1_cost">Cost</span>
-                    </div>
-                    <div class="comparison-col comparison-col-trad">
-                        <span class="tag tag-bad" data-lang-key="comparison_1_cost_trad">Enterprise License</span>
-                        <p class="comparison-desc">$10K+ per year</p>
-                    </div>
-                    <div class="comparison-col comparison-col-vantagics">
-                        <span class="tag tag-good" data-lang-key="comparison_1_cost_rapid">Affordable</span>
-                        <p class="comparison-desc">One-time purchase</p>
+                        <div class="comparison-vs">vs</div>
+                        <div class="comparison-option">
+                            <span class="comparison-label">Vantagics</span>
+                            <span class="comparison-value comparison-value-good" data-lang-key="comparison_1_cost_rapid">Affordable</span>
+                            <p class="comparison-text">One-time purchase</p>
+                        </div>
                     </div>
                 </div>
             </div>
