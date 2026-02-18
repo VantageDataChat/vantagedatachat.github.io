@@ -562,6 +562,140 @@ section h2 {
     border-radius: 4px;
 }
 
+/* New Comparison Table */
+.comparison-table-wrapper {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--border);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.comparison-header {
+    display: flex;
+    background: linear-gradient(135deg, #1E293B 0%, #334155 100%);
+    color: white;
+    padding: 1.25rem 0;
+}
+
+.comparison-row {
+    display: flex;
+    border-bottom: 1px solid var(--border);
+    transition: all 0.2s ease;
+}
+
+.comparison-row:last-child {
+    border-bottom: none;
+}
+
+.comparison-row:hover {
+    background: #F8FAFC;
+}
+
+.comparison-col {
+    padding: 1.25rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.comparison-col-label {
+    flex: 1.2;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 600;
+    color: var(--heading);
+    font-size: 0.95rem;
+}
+
+.row-icon {
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    flex-shrink: 0;
+}
+
+.comparison-col-trad,
+.comparison-col-vantagics {
+    flex: 1;
+    text-align: center;
+    align-items: center;
+}
+
+.comparison-col-trad {
+    background: #FEF2F2;
+}
+
+.comparison-col-vantagics {
+    background: #ECFDF5;
+}
+
+.comparison-header .comparison-col-trad {
+    background: rgba(239, 68, 68, 0.2);
+}
+
+.comparison-header .comparison-col-vantagics {
+    background: rgba(16, 185, 129, 0.2);
+}
+
+.comparison-header .comparison-col {
+    flex: 1;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.comparison-header .comparison-col-label {
+    padding-left: 1.5rem;
+}
+
+.col-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.25rem;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.375rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0.375rem;
+}
+
+.tag-bad {
+    background: rgba(239, 68, 68, 0.15);
+    color: #DC2626;
+}
+
+.tag-good {
+    background: rgba(16, 185, 129, 0.15);
+    color: #059669;
+}
+
+.comparison-desc {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    line-height: 1.4;
+}
+
+.comparison-row:hover .comparison-col-trad {
+    background: #FEE2E2;
+}
+
+.comparison-row:hover .comparison-col-vantagics {
+    background: #D1FAE5;
+}
+
 /* Use Cases Grid */
 .use-cases-grid {
     display: grid;
@@ -603,6 +737,25 @@ section h2 {
     width: 60%;
 }
 
+.use-case-icon {
+    width: 52px;
+    height: 52px;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.use-case-item:hover .use-case-icon {
+    background: var(--accent-gradient);
+    color: white;
+    transform: scale(1.1);
+}
+
 .use-case-item h3 {
     font-size: 1rem;
     font-weight: 600;
@@ -613,6 +766,23 @@ section h2 {
 .use-case-item p {
     font-size: 0.8rem;
     color: var(--text-light);
+    line-height: 1.5;
+}
+
+.use-case-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+    margin-top: 0.75rem;
+}
+
+.tag-small {
+    font-size: 0.65rem;
+    padding: 0.2rem 0.5rem;
+    background: rgba(99, 102, 241, 0.08);
+    color: var(--primary);
+    border-radius: 4px;
+    font-weight: 500;
 }
 
 /* Quick Start Grid */
@@ -906,6 +1076,20 @@ html[lang="zh"] .footer-logo .logo-cn { color: white; margin-left: 0; }
     .stat-divider {
         width: 40px;
         height: 1px;
+    }
+    .comparison-table-wrapper {
+        font-size: 0.85rem;
+    }
+    .comparison-col-label {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    .row-icon {
+        display: none;
+    }
+    .comparison-desc {
+        display: none;
     }
 }
 
