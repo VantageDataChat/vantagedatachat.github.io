@@ -1165,6 +1165,8 @@ html[lang="zh"] .footer-logo .logo-cn { color: white; margin-left: 0; }
     border: 2px solid var(--border);
     transition: all 0.3s ease;
     position: relative;
+    overflow: visible;
+    min-height: 380px;
 }
 
 .expert-card {
