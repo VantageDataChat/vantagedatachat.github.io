@@ -1523,17 +1523,16 @@ html[lang="zh"] .footer-logo .logo-cn { color: white; margin-left: 0; }
 }
 
 .deployment-card-expert {
-    border-color: rgba(79, 70, 229, 0.3);
-    transform: scale(1.05);
-    z-index: 1;
+    border-color: var(--primary);
+    box-shadow: 0 8px 30px rgba(79, 70, 229, 0.2);
     overflow: visible;
     min-height: 520px;
 }
 
 .deployment-card-expert:hover {
-    transform: scale(1.05) translateY(-8px);
+    transform: translateY(-8px);
     border-color: var(--primary);
-    box-shadow: 0 20px 40px rgba(79, 70, 229, 0.2);
+    box-shadow: 0 20px 40px rgba(79, 70, 229, 0.25);
 }
 
 .deployment-card-enterprise {
